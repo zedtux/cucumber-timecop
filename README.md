@@ -6,7 +6,7 @@ This gem install [timecop](https://github.com/travisjeffery/timecop) and [chroni
 
 Add this line to your application's Gemfile:
 
-    gem 'cucumber-timecop'
+    gem 'cucumber-timecop', :require => false
 
 And then execute:
 
@@ -17,6 +17,10 @@ Or install it yourself as:
     $ gem install cucumber-timecop
 
 ## Usage
+
+Add the following line to the features/support/env.rb:
+
+    require 'cucumber/timecop'
 
 When this gem is installed, you can use the following cucumber steps:
 
