@@ -41,6 +41,11 @@ Given /^(?:I|we) jump in our Delorean and return to the present$/ do
   Timecop.return
 end
 
+Before do
+  # Ensure Chronic is using the same time zone
+  Chronic.time_class = Time.zone
+end
+
 After do
   Timecop.return
 end
