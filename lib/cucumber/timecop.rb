@@ -43,7 +43,7 @@ end
 
 Before do
   # Ensure Chronic is using the same time zone
-  Chronic.time_class = Time.zone
+  Chronic.time_class = Time.now.zone
 end
 
 After do
