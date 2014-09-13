@@ -1,8 +1,13 @@
-require "chronic"
-require "timecop"
+require 'chronic'
+require 'timecop'
 
+#
+# TemporalHelpers module group all the needed methods to use Timecop with
+# Cucumber
+#
+# @author [zedtux]
+#
 module TemporalHelpers
-
   # Travels to +time+ and lets the clock keep running.
   #
   # If a block is given, executes the block at that
@@ -24,20 +29,19 @@ module TemporalHelpers
   def parse_time(time)
     Chronic.parse(time) || Time.parse(time)
   end
-
 end
 
 World(TemporalHelpers)
 
-Given /^it is currently (.+)$/ do |time|
+Given(/^it is currently (.+)$/) do |time|
   travel_to time
 end
 
-Given /^time is frozen at (.+)$/ do |time|
+Given(/^time is frozen at (.+)$/) do |time|
   freeze_time_at time
 end
 
-Given /^(?:I|we) jump in our Delorean and return to the present$/ do
+Given(/^(?:I|we) jump in our Delorean and return to the present$/) do
   Timecop.return
 end
 
