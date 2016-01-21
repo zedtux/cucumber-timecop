@@ -47,7 +47,7 @@ end
 
 Before do
   # Ensure Chronic is using the same time zone
-  Chronic.time_class = defined?(Rails) ? Time.zone : Time.now.zone
+  Chronic.time_class = Time.zone if defined?(Rails)
 end
 
 After do
