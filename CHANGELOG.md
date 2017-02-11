@@ -1,6 +1,6 @@
 ## Unreleased
 
- - Only change Chronic.time_class when Rails is used
+ - Only change Chronic.time_class when Rails is used (#3) [edejong]
 
 ## 0.0.5 (2014-10-04)
 
@@ -8,7 +8,7 @@
 
 ## 0.0.4 (2014-08-29)
 
- - Fixed Time zone error [v0dro]
+ - Fixed Time zone error (#1) [v0dro]
 
 ## 0.0.3 (2013-12-01)
 
