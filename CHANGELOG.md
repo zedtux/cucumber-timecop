@@ -1,5 +1,9 @@
 ## Unreleased
 
+
+
+## 0.0.6 (2017-02-11)
+
  - Only change Chronic.time_class when Rails is used ([#3](https://github.com/zedtux/cucumber-timecop/pull/3)) [[edejong](https://github.com/edejong)]
 
 ## 0.0.5 (2014-10-04)
