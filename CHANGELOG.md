@@ -1,5 +1,7 @@
 ## Unreleased
 
+ - Only change Chronic.time_class when Rails is used
+
 ## 0.0.5 (2014-10-04)
 
  - Handle cucumber-timecop within or out of a Rails project
